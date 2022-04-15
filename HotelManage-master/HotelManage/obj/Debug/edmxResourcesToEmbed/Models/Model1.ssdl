@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HotelManage1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“HotelManage1.dbo.ChargeCount”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="ChargeCount">
+          <Property Name="date" Type="datetime" />
+          <Property Name="Charge" Type="float" />
+        </EntityType>-->
+  <EntityType Name="FloorInfo">
+    <Key>
+      <PropertyRef Name="Fid" />
+    </Key>
+    <Property Name="Fid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fname" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="GuestInfo">
+    <Key>
+      <PropertyRef Name="Gid" />
+    </Key>
+    <Property Name="Gid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Gname" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="GTid" Type="int" Nullable="false" />
+    <Property Name="Sex" Type="char" MaxLength="5" />
+    <Property Name="Mobile" Type="varchar" MaxLength="30" />
+    <Property Name="ChargeSum" Type="int" />
+    <Property Name="Pid" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="GuestType">
+    <Key>
+      <PropertyRef Name="GTid" />
+    </Key>
+    <Property Name="GTid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tname" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Trate" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPInfo">
+    <Key>
+      <PropertyRef Name="OId" />
+    </Key>
+    <Property Name="OId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Pwd" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Record">
+    <Key>
+      <PropertyRef Name="REid" />
+    </Key>
+    <Property Name="REid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Gid" Type="int" Nullable="false" />
+    <Property Name="RoomId" Type="int" Nullable="false" />
+    <Property Name="InTime" Type="datetime" />
+    <Property Name="OutTime" Type="datetime" />
+    <Property Name="FactTime" Type="varchar" MaxLength="50" />
+    <Property Name="daynum" Type="int" />
+    <Property Name="Charge" Type="int" />
+  </EntityType>
+  <EntityType Name="Reserve">
+    <Key>
+      <PropertyRef Name="Yid" />
+    </Key>
+    <Property Name="Yid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Gid" Type="int" Nullable="false" />
+    <Property Name="RoomId" Type="int" Nullable="false" />
+    <Property Name="InTime" Type="datetime" />
+    <Property Name="OutTime" Type="datetime" />
+    <Property Name="FactTime" Type="varchar" MaxLength="50" />
+    <Property Name="daynum" Type="int" />
+    <Property Name="Charge" Type="int" />
+    <Property Name="actCharge" Type="int" />
+  </EntityType>
+  <EntityType Name="RoomInfo">
+    <Key>
+      <PropertyRef Name="RoomId" />
+    </Key>
+    <Property Name="RoomId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Number" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RTid" Type="int" />
+    <Property Name="RSid" Type="int" />
+    <Property Name="Fid" Type="int" />
+    <Property Name="Mark" Type="varchar" MaxLength="225" />
+  </EntityType>
+  <EntityType Name="RoomState">
+    <Key>
+      <PropertyRef Name="StateId" />
+    </Key>
+    <Property Name="StateId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StateName" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RoomType">
+    <Key>
+      <PropertyRef Name="RTid" />
+    </Key>
+    <Property Name="RTid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RTname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RTprice" Type="money" Nullable="false" />
+    <Property Name="AddBedPrice" Type="money" Nullable="false" />
+    <Property Name="IsAddBed" Type="bit" />
+    <Property Name="Remark" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Trans">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="reason" Type="varchar" MaxLength="50" />
+    <Property Name="addmoney" Type="int" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="UId" />
+    </Key>
+    <Property Name="UId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Uname" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Upwd" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Tid" Type="int" />
+    <Property Name="Sex" Type="char" MaxLength="5" />
+    <Property Name="Mobile" Type="varchar" MaxLength="30" />
+    <Property Name="Pid" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="HotelManage1ModelStoreContainer">
+    <EntitySet Name="FloorInfo" EntityType="Self.FloorInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GuestInfo" EntityType="Self.GuestInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GuestType" EntityType="Self.GuestType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPInfo" EntityType="Self.OPInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Record" EntityType="Self.Record" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reserve" EntityType="Self.Reserve" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RoomInfo" EntityType="Self.RoomInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RoomState" EntityType="Self.RoomState" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RoomType" EntityType="Self.RoomType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trans" EntityType="Self.Trans" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserInfo" EntityType="Self.UserInfo" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
