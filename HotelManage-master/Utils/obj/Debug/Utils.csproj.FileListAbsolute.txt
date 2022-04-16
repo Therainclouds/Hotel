@@ -1,0 +1,6 @@
+D:\Git\Hotel\HotelManage-master\Utils\bin\Debug\Utils.dll
+D:\Git\Hotel\HotelManage-master\Utils\bin\Debug\Utils.pdb
+D:\Git\Hotel\HotelManage-master\Utils\obj\Debug\Utils.csproj.AssemblyReference.cache
+D:\Git\Hotel\HotelManage-master\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
+D:\Git\Hotel\HotelManage-master\Utils\obj\Debug\Utils.dll
+D:\Git\Hotel\HotelManage-master\Utils\obj\Debug\Utils.pdb

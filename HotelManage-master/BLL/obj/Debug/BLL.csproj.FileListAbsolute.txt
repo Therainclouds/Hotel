@@ -32,3 +32,12 @@ C:\Users\Administrator\Desktop\HotelManage-master\BLL\obj\Debug\BLL.csproj.CoreC
 C:\Users\Administrator\Desktop\HotelManage-master\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\Administrator\Desktop\HotelManage-master\BLL\obj\Debug\BLL.dll
 C:\Users\Administrator\Desktop\HotelManage-master\BLL\obj\Debug\BLL.pdb
+D:\Git\Hotel\HotelManage-master\BLL\bin\Debug\BLL.dll
+D:\Git\Hotel\HotelManage-master\BLL\bin\Debug\BLL.pdb
+D:\Git\Hotel\HotelManage-master\BLL\bin\Debug\DAL.dll
+D:\Git\Hotel\HotelManage-master\BLL\bin\Debug\DAL.pdb
+D:\Git\Hotel\HotelManage-master\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Git\Hotel\HotelManage-master\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Git\Hotel\HotelManage-master\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Git\Hotel\HotelManage-master\BLL\obj\Debug\BLL.dll
+D:\Git\Hotel\HotelManage-master\BLL\obj\Debug\BLL.pdb
