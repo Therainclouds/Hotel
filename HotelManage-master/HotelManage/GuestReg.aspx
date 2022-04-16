@@ -116,7 +116,7 @@
                             </td>
                             <td class="style3">
                                 <asp:TextBox ID="txtMobile" runat="server" CssClass="text"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*" ControlToValidate="txtMobile"></asp:RequiredFieldValidator>
+                                <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*" ControlToValidate="txtMobile"></asp:RequiredFieldValidator>--%>
                             </td>
                             <td class="tdstyle">顾客等级：
                             </td>
@@ -129,7 +129,7 @@
                             </td>
                             <td>
                                 <asp:TextBox ID="txtPid" runat="server" CssClass="text"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ControlToValidate="txtPid"></asp:RequiredFieldValidator>
+                                <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ControlToValidate="txtPid"></asp:RequiredFieldValidator>--%>
                             </td>
                             <td class="tdstyle">累计消费：
                             </td>
@@ -143,6 +143,15 @@
                             <td colspan="3">
                                 <asp:TextBox ID="TextBox7" runat="server" Width="660" Height="101"
                                     TextMode="MultiLine" Font-Names="微软雅黑" Font-Size="16pt" BackColor="#ffffff"></asp:TextBox>
+                            </td>
+                        </tr>
+                         <%-- 上传身份证 --%>
+                        <tr>
+                            <td>上传身份证照片：</td>
+                            <td>
+                                <asp:FileUpload ID="FileUpload1" runat="server" />
+                                <asp:Button ID="Button1"  OnClick="Button1_Click" runat="server" Text="上传" />
+                                
                             </td>
                         </tr>
                         <tr>
