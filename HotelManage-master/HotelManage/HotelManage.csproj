@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HotelManage</RootNamespace>
     <AssemblyName>HotelManage</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -67,9 +67,9 @@
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -236,7 +236,9 @@
     <Content Include="laydate\skins\yahui\laydate.css" />
     <Content Include="laydate\skins\yalan\icon.png" />
     <Content Include="laydate\skins\yalan\laydate.css" />
+    <Content Include="Li.aspx" />
     <Content Include="LiveMark.aspx" />
+    <Content Include="Lu.aspx" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -263,6 +265,7 @@
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Skip.aspx" />
+    <Content Include="Team.aspx" />
     <Content Include="Transform.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -271,6 +274,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="Xu.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddDays.aspx.cs">
@@ -343,12 +347,26 @@
     <Compile Include="GuestReg.aspx.designer.cs">
       <DependentUpon>GuestReg.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Li.aspx.cs">
+      <DependentUpon>Li.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Li.aspx.designer.cs">
+      <DependentUpon>Li.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LiveMark.aspx.cs">
       <DependentUpon>LiveMark.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LiveMark.aspx.designer.cs">
       <DependentUpon>LiveMark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lu.aspx.cs">
+      <DependentUpon>Lu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lu.aspx.designer.cs">
+      <DependentUpon>Lu.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.master.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
@@ -494,12 +512,26 @@
     <Compile Include="Skip.aspx.designer.cs">
       <DependentUpon>Skip.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Team.aspx.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Team.aspx.designer.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Transform.aspx.cs">
       <DependentUpon>Transform.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Transform.aspx.designer.cs">
       <DependentUpon>Transform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xu.aspx.cs">
+      <DependentUpon>Xu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xu.aspx.designer.cs">
+      <DependentUpon>Xu.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

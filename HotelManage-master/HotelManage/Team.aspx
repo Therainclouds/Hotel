@@ -296,7 +296,7 @@
                         <div class="circle"></div>
                         <div class="inner">
                             <h3>技术总监</h3>
-                            <p>Developer</p>
+                            <p>陆加桥</p>
                             <div class="image">
                                 <img src="team1.png" alt="">
                             </div><!-- /.team-one__image -->
