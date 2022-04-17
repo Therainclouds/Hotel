@@ -4,3 +4,9 @@ D:\Git\Hotel\HotelManage-master\Utils\obj\Debug\Utils.csproj.AssemblyReference.c
 D:\Git\Hotel\HotelManage-master\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
 D:\Git\Hotel\HotelManage-master\Utils\obj\Debug\Utils.dll
 D:\Git\Hotel\HotelManage-master\Utils\obj\Debug\Utils.pdb
+E:\Hotel\Hotel\HotelManage-master\Utils\bin\Debug\Utils.dll
+E:\Hotel\Hotel\HotelManage-master\Utils\bin\Debug\Utils.pdb
+E:\Hotel\Hotel\HotelManage-master\Utils\obj\Debug\Utils.csproj.AssemblyReference.cache
+E:\Hotel\Hotel\HotelManage-master\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
+E:\Hotel\Hotel\HotelManage-master\Utils\obj\Debug\Utils.dll
+E:\Hotel\Hotel\HotelManage-master\Utils\obj\Debug\Utils.pdb

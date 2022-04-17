@@ -41,3 +41,12 @@ D:\Git\Hotel\HotelManage-master\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\Git\Hotel\HotelManage-master\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Git\Hotel\HotelManage-master\BLL\obj\Debug\BLL.dll
 D:\Git\Hotel\HotelManage-master\BLL\obj\Debug\BLL.pdb
+E:\Hotel\Hotel\HotelManage-master\BLL\bin\Debug\BLL.dll
+E:\Hotel\Hotel\HotelManage-master\BLL\bin\Debug\BLL.pdb
+E:\Hotel\Hotel\HotelManage-master\BLL\bin\Debug\DAL.dll
+E:\Hotel\Hotel\HotelManage-master\BLL\bin\Debug\DAL.pdb
+E:\Hotel\Hotel\HotelManage-master\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\Hotel\Hotel\HotelManage-master\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\Hotel\Hotel\HotelManage-master\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\Hotel\Hotel\HotelManage-master\BLL\obj\Debug\BLL.dll
+E:\Hotel\Hotel\HotelManage-master\BLL\obj\Debug\BLL.pdb

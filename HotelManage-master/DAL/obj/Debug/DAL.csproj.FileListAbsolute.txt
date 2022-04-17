@@ -27,3 +27,9 @@ D:\Git\Hotel\HotelManage-master\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
 D:\Git\Hotel\HotelManage-master\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\Git\Hotel\HotelManage-master\DAL\obj\Debug\DAL.dll
 D:\Git\Hotel\HotelManage-master\DAL\obj\Debug\DAL.pdb
+E:\Hotel\Hotel\HotelManage-master\DAL\bin\Debug\DAL.dll
+E:\Hotel\Hotel\HotelManage-master\DAL\bin\Debug\DAL.pdb
+E:\Hotel\Hotel\HotelManage-master\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\Hotel\Hotel\HotelManage-master\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\Hotel\Hotel\HotelManage-master\DAL\obj\Debug\DAL.dll
+E:\Hotel\Hotel\HotelManage-master\DAL\obj\Debug\DAL.pdb
