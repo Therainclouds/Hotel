@@ -235,8 +235,8 @@
           </div>
         </a>
 
-        <a href="images/works/4.jpg" class="work">
-          <img src="images/works/4.jpg" alt="">
+        <a href="images/JQQD.jpg" class="work">
+          <img src="images/JQQD.jpg" alt="">
           <div class="info">
             <h3>敬请期待</h3>
             <div class="cat">敬请期待</div>

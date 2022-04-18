@@ -152,8 +152,12 @@
     <Content Include="images\jzgx.png" />
     <Content Include="images\LeftBg.png" />
     <Content Include="images\loucengzhuangtai.png" />
+    <Content Include="images\lx.jpg" />
+    <Content Include="images\LX.png" />
     <Content Include="images\ooo.jpg" />
     <Content Include="images\opbg1.jpg" />
+    <Content Include="images\ph.png" />
+    <Content Include="images\ph1.png" />
     <Content Include="images\pro_down.png" />
     <Content Include="images\pro_left.png" />
     <Content Include="images\reportlogo.jpg" />
@@ -167,6 +171,7 @@
     <Content Include="images\tongjibaobiao.png" />
     <Content Include="images\topbg.png" />
     <Content Include="images\tuichuxitong.png" />
+    <Content Include="images\WX.png" />
     <Content Include="images\xinxixiugai.png" />
     <Content Include="images\xinzengguke.png" />
     <Content Include="images\xiugaimima.png" />
