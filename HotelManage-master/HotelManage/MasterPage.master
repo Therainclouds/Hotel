@@ -107,7 +107,7 @@
                                 <a href="#" class="sidebar-toggler text-gray-500 mr-4 mr-lg-5 lead">
                                     <i class="fas fa-align-left"></i>
                                 </a>
-                                <a href="Right.aspx" class="navbar-brand font-weight-bold text-uppercase text-base">HOTEL 嘟嘟</a>
+                                <a href="Right.aspx" class="navbar-brand font-weight-bold text-uppercase text-base">HOTEL 敦煌</a>
                                 <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
                                     <li class="nav-item"></li>
                                     <li class="nav-item dropdown mr-3"><a id="notifications" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-gray-400 px-1"><i class="fa fa-bell"></i><span class="notification-icon"></span></a>

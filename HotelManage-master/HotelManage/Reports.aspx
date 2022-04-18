@@ -50,7 +50,7 @@
  <br />  
          
        &nbsp;&nbsp;&nbsp;&nbsp;<img alt="" class="style1" src="images/yearlogo.png"  
-            style=" position:relative; top:10px; left: -1px;"/> 
+            style=" position:relative;top:auto; left: -1px;"/> 
         <asp:DropDownList ID="DropDownList1" runat="server" 
             CssClass="text" AutoPostBack="True">
         </asp:DropDownList>

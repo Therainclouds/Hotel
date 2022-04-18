@@ -112,6 +112,8 @@
     <Content Include="images\fangjianxinxi.png" />
     <Content Include="images\fangjianzhuangtai.png" />
     <Content Include="images\fenggeguanli.png" />
+    <Content Include="images\FWQ.jpg" />
+    <Content Include="images\GTJM.jpg" />
     <Content Include="images\gukeleixing.png" />
     <Content Include="images\gukexinxi.png" />
     <Content Include="images\guzhangbaoxiu.png" />
@@ -146,6 +148,7 @@
     <Content Include="images\jianzu.png" />
     <Content Include="images\jieshao.jpg" />
     <Content Include="images\JingChu.png" />
+    <Content Include="images\JQQD.jpg" />
     <Content Include="images\jzgx.png" />
     <Content Include="images\LeftBg.png" />
     <Content Include="images\loucengzhuangtai.png" />
@@ -170,6 +173,8 @@
     <Content Include="images\yearlogo.png" />
     <Content Include="images\yudingguanli.png" />
     <Content Include="images\yudingguanli1.png" />
+    <Content Include="images\ZTTF.jpg" />
+    <Content Include="images\酒店LOGO.png" />
     <Content Include="js\adapters\standalone-framework.js" />
     <Content Include="js\adapters\standalone-framework.src.js" />
     <Content Include="js\bootstrap.min.js" />
