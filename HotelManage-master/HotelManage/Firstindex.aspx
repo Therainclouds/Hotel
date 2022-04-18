@@ -22,7 +22,7 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="inner-width">
-      <a href="/" class="logo"></a>
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/酒店LOGO.png" />
       <button class="menu-toggler">
         <span></span>
         <span></span>
@@ -211,24 +211,24 @@
     <div class="inner-width">
       <h1 class="section-title">工作明细</h1>
       <div class="works">
-        <a href="images/works/1.jpg" class="work">
-          <img src="images/works/1.jpg" alt="">
+        <a href="images/ZTTF.jpg" class="work">
+          <img src="images/ZTTF.jpg" alt="">
           <div class="info">
             <h3>酒店商城页面</h3>
             <div class="cat">高端优雅，尽享顶级</div>
           </div>
         </a>
 
-        <a href="images/works/2.jpg" class="work">
-          <img src="images/works/2.jpg" alt="">
+        <a href="images/FWQ.jpg" class="work">
+          <img src="images/FWQ.jpg" alt="">
           <div class="info">
             <h3>服务器购买</h3>
             <div class="cat">极致优化, 极致享受</div>
           </div>
         </a>
 
-        <a href="images/works/3.jpg" class="work">
-          <img src="images/works/3.jpg" alt="">
+        <a href="images/GTJM.jpg" class="work">
+          <img src="images/GTJM.jpg" alt="">
           <div class="info">
             <h3>工作加盟</h3>
             <div class="cat">共同探索未来的可能性</div>
@@ -243,16 +243,16 @@
           </div>
         </a>
 
-        <a href="images/works/5.jpg" class="work">
-          <img src="images/works/5.jpg" alt="">
+        <a href="images/JQQD.jpg" class="work">
+          <img src="images/JQQD.jpg" alt="">
           <div class="info">
             <h3>敬请期待</h3>
             <div class="cat">敬请期待</div>
           </div>
         </a>
 
-        <a href="images/works/6.jpg" class="work">
-          <img src="images/works/6.jpg" alt="">
+        <a href="images/JQQD.jpg" class="work">
+          <img src="images/JQQD.jpg" alt="">
           <div class="info">
             <h3>敬请期待</h3>
             <div class="cat">敬请期待</div>

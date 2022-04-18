@@ -189,7 +189,7 @@ overflow-y:auto;overflow-X:auto;
                         <br />
                         顾客姓名：<asp:TextBox ID="txtGname" runat="server" CssClass="bt"></asp:TextBox>
                         &nbsp;&nbsp;
-        身份证号：<asp:TextBox ID="txtPid" runat="server" CssClass="bt" Width="204px"></asp:TextBox>
+        身份证号：<asp:TextBox ID="txtPid" runat="server" CssClass="bt" ></asp:TextBox>
                         &nbsp;&nbsp;<asp:Button ID="btnSearch" runat="server" Text="查询" CssClass="button"
                             OnClick="btnSearch_Click" Width="85px" Height="33px" />
                         <br />
