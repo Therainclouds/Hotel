@@ -249,6 +249,7 @@
     <Content Include="Li.aspx" />
     <Content Include="LiveMark.aspx" />
     <Content Include="Lu.aspx" />
+    <Content Include="Map.aspx" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -377,6 +378,13 @@
     </Compile>
     <Compile Include="Lu.aspx.designer.cs">
       <DependentUpon>Lu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map.aspx.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map.aspx.designer.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.master.cs">
       <DependentUpon>MasterPage.master</DependentUpon>

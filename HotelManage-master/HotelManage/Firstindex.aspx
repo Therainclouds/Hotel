@@ -279,7 +279,7 @@
 
         <div class="item">
           <i class="fas fa-map-marker-alt"></i>
-          云南农业职业技术学院互联网技术学院
+            <a href="Map.aspx" style="text-decoration:none;color:white;">云南农业职业技术学院互联网技术学院</a>
         </div>
       </div>
 
