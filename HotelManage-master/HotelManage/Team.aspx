@@ -80,19 +80,20 @@
         }
 
         .image {
-            width: 165px;
+            width: 200px;
+            height:200px;
             margin-left: auto;
             margin-right: auto;
-            border-radius: 50%;
+            /*border-radius: 100%;*/
             overflow: hidden;
-            border: 5px solid #fff;
+            /*border: 5px solid #fff;*/                                                          
             transition: all 500ms ease;
 
         }
-
+                   
 
         .single:hover .image {
-            border: 5px solid white;
+                                 
         }
 
         .single h3 {
@@ -243,11 +244,6 @@
 <body>
     <form id="form1" runat="server">
         <div>
-  
-
-
-
-
     <section class="team-one" id="team">
 
         <img src="faq-bg-1-1.png" class="bg-shape-1" alt="">
@@ -264,7 +260,7 @@
                             <h3>CEO、前端工程师</h3>
                             <p>许应烨</p>
                             <div class="image">
-                                <img src="team1.png" alt="">
+                                <img src="images/LX.png" alt=""/>
                             </div><!-- /.team-one__image -->
                             <div class="social">
                                 <a href="Xu.aspx"><i class="fa fa-facebook"></i></a>
@@ -281,7 +277,7 @@
                             <h3>财政管理 设计师</h3>
                             <p>李万雄</p>
                             <div class="image">
-                                <img src="team1.png" alt="">
+                                <img src="images/WX.png" alt="">
                             </div>
                             <div class="social">
                                 <a href="Li.aspx"><i class="fa fa-facebook"></i></a>
@@ -298,7 +294,7 @@
                             <h3>技术总监</h3>
                             <p>陆加桥</p>
                             <div class="image">
-                                <img src="team1.png" alt="">
+                                <img src="images/PH.png" alt="">
                             </div><!-- /.team-one__image -->
                             <div class="social">
                                 <a href="Lu.aspx"><i class="fa fa-facebook-square"></i></a>
