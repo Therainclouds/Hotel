@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="CheckIn.aspx.cs" Inherits="HotelManage.CheckIn" %>
+﻿  <%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="CheckIn.aspx.cs" Inherits="HotelManage.CheckIn" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>用户入住信息登记（表）</title>
         <script src="laydate/laydate.js" type="text/javascript"></script>

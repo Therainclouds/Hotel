@@ -295,6 +295,9 @@
     <Compile Include="AddDays.aspx.designer.cs">
       <DependentUpon>AddDays.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ajax.ashx.cs">
+      <DependentUpon>Ajax.ashx</DependentUpon>
+    </Compile>
     <Compile Include="ChangeGuest.aspx.cs">
       <DependentUpon>ChangeGuest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -578,6 +581,7 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="Ajax.ashx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
