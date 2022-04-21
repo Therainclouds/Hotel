@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="HotelManage1ModelStoreContainer" CdmEntityContainer="HotelManage1Entities">
+    <EntitySetMapping Name="ChargeCount">
+      <EntityTypeMapping TypeName="HotelManage1Model.ChargeCount">
+        <MappingFragment StoreEntitySet="ChargeCount">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="Charge" ColumnName="Charge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="FloorInfo">
       <EntityTypeMapping TypeName="HotelManage1Model.FloorInfo">
         <MappingFragment StoreEntitySet="FloorInfo">

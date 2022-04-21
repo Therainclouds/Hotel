@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="HotelManage1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <!--生成过程中发现错误:
-警告 6013: 表/视图“HotelManage1.dbo.ChargeCount”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
-        <EntityType Name="ChargeCount">
-          <Property Name="date" Type="datetime" />
-          <Property Name="Charge" Type="float" />
-        </EntityType>-->
+  <EntityType Name="ChargeCount">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="Charge" Type="float" />
+  </EntityType>
   <EntityType Name="FloorInfo">
     <Key>
       <PropertyRef Name="Fid" />
@@ -118,6 +120,7 @@
     <Property Name="Pid" Type="varchar" MaxLength="20" />
   </EntityType>
   <EntityContainer Name="HotelManage1ModelStoreContainer">
+    <EntitySet Name="ChargeCount" EntityType="Self.ChargeCount" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="FloorInfo" EntityType="Self.FloorInfo" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GuestInfo" EntityType="Self.GuestInfo" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GuestType" EntityType="Self.GuestType" Schema="dbo" store:Type="Tables" />

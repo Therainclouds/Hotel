@@ -5,12 +5,14 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="HotelManage1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--生成过程中发现错误:
-警告 6013: 表/视图“HotelManage1.dbo.ChargeCount”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
         <EntityType Name="ChargeCount">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="date" Type="datetime" />
           <Property Name="Charge" Type="float" />
-        </EntityType>-->
+        </EntityType>
         <EntityType Name="FloorInfo">
           <Key>
             <PropertyRef Name="Fid" />
@@ -123,6 +125,7 @@
           <Property Name="Pid" Type="varchar" MaxLength="20" />
         </EntityType>
         <EntityContainer Name="HotelManage1ModelStoreContainer">
+          <EntitySet Name="ChargeCount" EntityType="Self.ChargeCount" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="FloorInfo" EntityType="Self.FloorInfo" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="GuestInfo" EntityType="Self.GuestInfo" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="GuestType" EntityType="Self.GuestType" Schema="dbo" store:Type="Tables" />
@@ -140,6 +143,14 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="HotelManage1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ChargeCount">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="date" Type="DateTime" Precision="3" />
+          <Property Name="Charge" Type="Double" />
+        </EntityType>
         <EntityType Name="FloorInfo">
           <Key>
             <PropertyRef Name="Fid" />
@@ -252,6 +263,7 @@
           <Property Name="Pid" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="HotelManage1Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ChargeCount" EntityType="Self.ChargeCount" />
           <EntitySet Name="FloorInfo" EntityType="Self.FloorInfo" />
           <EntitySet Name="GuestInfo" EntityType="Self.GuestInfo" />
           <EntitySet Name="GuestType" EntityType="Self.GuestType" />
@@ -270,6 +282,15 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="HotelManage1ModelStoreContainer" CdmEntityContainer="HotelManage1Entities">
+          <EntitySetMapping Name="ChargeCount">
+            <EntityTypeMapping TypeName="HotelManage1Model.ChargeCount">
+              <MappingFragment StoreEntitySet="ChargeCount">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="Charge" ColumnName="Charge" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="FloorInfo">
             <EntityTypeMapping TypeName="HotelManage1Model.FloorInfo">
               <MappingFragment StoreEntitySet="FloorInfo">

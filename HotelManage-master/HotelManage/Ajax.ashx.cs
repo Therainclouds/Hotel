@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelManage.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -44,7 +45,13 @@ namespace HotelManage
             /*总统套房*/
             var nowdate6 = context.Request.Params["Nowdate6"];
             var getday6 = context.Request.Params["Getday6"];
+
+            using(HotelManage1Entities db=new HotelManage1Entities())
+            {
+              
+            }
             int a = 1200;
+
             context.Response.Write(a);
         }
 

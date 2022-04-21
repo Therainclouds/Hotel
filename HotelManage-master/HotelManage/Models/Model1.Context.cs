@@ -25,6 +25,7 @@ namespace HotelManage.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<ChargeCount> ChargeCount { get; set; }
         public virtual DbSet<FloorInfo> FloorInfo { get; set; }
         public virtual DbSet<GuestInfo> GuestInfo { get; set; }
         public virtual DbSet<GuestType> GuestType { get; set; }
