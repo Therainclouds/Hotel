@@ -181,7 +181,7 @@
             width: 153px;
             height: 117px;
             content: '';
-            background-image: url(team-circle-1-1.png);
+            background-image: url(images/team-circle-1-1.png);
             transform: perspective(200px) scaleX(0) scaleY(0);
             transition: transform 500ms ease, opacity 500ms ease;
             opacity: 0;
@@ -195,7 +195,7 @@
             width: 140px;
             height: 156px;
             content: '';
-            background-image: url(team-circle-1-2.png);
+            background-image: url(imags/team-circle-1-2.png);
             transform: perspective(150px) scaleX(0) scaleY(0);
             transition: transform 500ms ease, opacity 500ms ease;
             opacity: 0;
@@ -246,7 +246,7 @@
         <div>
     <section class="team-one" id="team">
 
-        <img src="faq-bg-1-1.png" class="bg-shape-1" alt="">
+        <img src="images/faq-bg-1-1.png" class="bg-shape-1" alt="">
         <div class="container">
             <div class="title text-center">
                 <p>了解我们的队伍</p>

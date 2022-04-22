@@ -24,8 +24,9 @@ namespace HotelManage
             var username=context.Request.Params["Username"];
             var usercall = context.Request.Params["Usercall"];
             var userid = context.Request.Params["Userid"];
-         
-            
+
+           
+
             //客房信息
             //普通单间
             var nowdate1 = context.Request.Params["Nowdate1"];
@@ -46,9 +47,11 @@ namespace HotelManage
             var nowdate6 = context.Request.Params["Nowdate6"];
             var getday6 = context.Request.Params["Getday6"];
 
-            using(HotelManage1Entities db=new HotelManage1Entities())
+         
+
+            using (HotelManage1Entities db=new HotelManage1Entities())
             {
-              
+               
             }
             int a = 1200;
 

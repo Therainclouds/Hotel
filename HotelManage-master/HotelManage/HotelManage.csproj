@@ -111,6 +111,7 @@
     <Content Include="images\checkdate.png" />
     <Content Include="images\fangjianxinxi.png" />
     <Content Include="images\fangjianzhuangtai.png" />
+    <Content Include="images\faq-bg-1-1.png" />
     <Content Include="images\fenggeguanli.png" />
     <Content Include="images\FWQ.jpg" />
     <Content Include="images\GTJM.jpg" />
@@ -168,6 +169,8 @@
     <Content Include="images\searchlogo.png" />
     <Content Include="images\shenqingtuifang.png" />
     <Content Include="images\systemmsg.png" />
+    <Content Include="images\team-circle-1-1.png" />
+    <Content Include="images\team-circle-1-2.png" />
     <Content Include="images\tongjibaobiao.png" />
     <Content Include="images\topbg.png" />
     <Content Include="images\tuichuxitong.png" />
