@@ -74,6 +74,12 @@ namespace BLL
             return DAL_Hotel.Cha_Gname(gname,table);
 
         }
+        //根据顾客姓名查询信息
+        public static DataTable Cha_Gname(string gname)
+        {
+            return DAL_Hotel.Cha_Gname(gname);
+
+        }
 
 
         //根据身份证号查询信息
@@ -331,7 +337,11 @@ namespace BLL
         {
             return DAL_Hotel.image_TableType(type);
         }
-
+        //只查看单独类型的空余房间
+        public static DataTable roomIsNull(int type)
+        {
+            return DAL_Hotel.roomIsNull(type);
+        }
         //根据房间编号查询预约信息
         public static DataTable Cha_OneReserve(int roomid)
         {

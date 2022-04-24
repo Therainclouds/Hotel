@@ -90,6 +90,13 @@ namespace DAL
             string sql = "select top 36 * from RoomInfo,RoomState,FloorInfo,RoomType where RoomState.Stateid=Roominfo.Rsid and RoomInfo.FId=FloorInfo.fid and RoomInfo.RTid=RoomType.Rtid and roominfo.RTid=" + type;
             return DBHelper.Query(sql);
         }
+        //只看单独类型的空余房间
+        public static DataTable roomIsNull(int type)
+        {
+            string sql = "select top 36 * from RoomInfo,RoomState,FloorInfo,RoomType where RoomState.Stateid=Roominfo.Rsid and RoomInfo.FId=FloorInfo.fid and RoomInfo.RTid=RoomType.Rtid and roominfo.RTid=" + type + "and StateId=3";
+            return DBHelper.Query(sql);
+        }
+        
         //图标方式展示房间信息（分页）
         public static DataTable imgtable(int ye)
         {
@@ -118,6 +125,13 @@ namespace DAL
         public static DataTable Cha_Gname(string gname,string table)
         {
             string sql = "select * from " + table + " ,guestinfo,Roominfo where " + table + ".gid=guestinfo.gid and roominfo.roomid =" + table + ".roomid and gname like '%" + gname + "%'";
+            return DBHelper.Query(sql);
+
+        }
+        //根据顾客姓名查询信息
+        public static DataTable Cha_Gname(string gname)
+        {
+            string sql = "select * from GuestInfo where Gname ='"+gname+"'";
             return DBHelper.Query(sql);
 
         }
