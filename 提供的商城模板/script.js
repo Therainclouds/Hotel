@@ -84,6 +84,7 @@ var swiper = new Swiper(".brand-slider", {
 // }
 var username = "";
 function btget() {
+  debugger;
   $.ajax({
     type: "post",
     url: "http://localhost:3430/AddUserAjax.ashx",
@@ -95,16 +96,16 @@ function btget() {
       usersex: document.getElementById("man").value,
     },
     dataType: "json",
-    timeout: 10000,
+    timeout: 1000,
     //请求成功
     success: function (data) {
       var obj = JSON.parse(data);
       if (obj == 200) {
-        alert("添加成功")
+        alert("添加成功");
       }
     },
   });
-  username = document.getElementById("username").value
+  username = document.getElementById("username").value;
 }
 //预定按钮
 // function subget() {
@@ -151,7 +152,6 @@ function btget() {
 
 // }
 
-
 function subget(type) {
   switch (type) {
     case 1:
@@ -164,10 +164,9 @@ function subget(type) {
           RoomType: type,
           Nowdate1: document.getElementById("nowdate" + type).value,
           Getday1: document.getElementById("getday" + type).value,
-
         },
         dataType: "json",
-        timeout: 10000,
+        timeout: 1000,
         //请求成功
         success: function (data) {
           var obj = JSON.parse(data);
@@ -187,7 +186,6 @@ function subget(type) {
           RoomType: type,
           Nowdate2: document.getElementById("nowdate" + type).value,
           Getday2: document.getElementById("getday" + type).value,
-
         },
         dataType: "json",
         timeout: 10000,
@@ -199,7 +197,7 @@ function subget(type) {
           }
         },
       });
-      break
+      break;
     case 3:
       $.ajax({
         type: "post",
@@ -210,7 +208,6 @@ function subget(type) {
           RoomType: type,
           Nowdate3: document.getElementById("nowdate" + type).value,
           Getday3: document.getElementById("getday" + type).value,
-
         },
         dataType: "json",
         timeout: 10000,
@@ -222,7 +219,7 @@ function subget(type) {
           }
         },
       });
-      break
+      break;
     case 4:
       $.ajax({
         type: "post",
@@ -233,7 +230,6 @@ function subget(type) {
           RoomType: type,
           Nowdate4: document.getElementById("nowdate" + type).value,
           Getday4: document.getElementById("getday" + type).value,
-
         },
         dataType: "json",
         timeout: 10000,
@@ -245,7 +241,7 @@ function subget(type) {
           }
         },
       });
-      break
+      break;
     case 5:
       $.ajax({
         type: "post",
@@ -256,7 +252,6 @@ function subget(type) {
           RoomType: type,
           Nowdate5: document.getElementById("nowdate" + type).value,
           Getday5: document.getElementById("getday" + type).value,
-
         },
         dataType: "json",
         timeout: 10000,
@@ -268,7 +263,7 @@ function subget(type) {
           }
         },
       });
-      break
+      break;
     case 6:
       $.ajax({
         type: "post",
@@ -279,7 +274,6 @@ function subget(type) {
           RoomType: type,
           Nowdate6: document.getElementById("nowdate" + type).value,
           Getday6: document.getElementById("getday" + type).value,
-
         },
         dataType: "json",
         timeout: 10000,
@@ -291,6 +285,6 @@ function subget(type) {
           }
         },
       });
-      break
+      break;
   }
 }
