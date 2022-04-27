@@ -53,6 +53,10 @@ namespace HotelManage
                 var imgurl = FileUpload1.FileName;
                 string imgur2 = Server.MapPath("./IDCarImgs/" + imgurl);
                 FileUpload1.SaveAs(imgur2);
+
+                //图片显示，增加交互式
+                this.idCarImg.ImageUrl= "./IDCarImgs/"+imgurl;
+
                 StreamReader reader = new QueryCarInfo().queryCarInfo(imgur2);
                 JObject info = JObject.Parse(reader.ReadToEnd());
 
