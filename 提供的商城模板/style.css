@@ -26,6 +26,38 @@
   display: block;
 }
 
+.zhezhao {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(20, 20, 20, 0.788);
+  width: 100%;
+  height: 100%;
+}
+.tankuang {
+  position: relative;
+  background-color: white;
+  width: 50%;
+  height: 80%;
+  border-radius: 5px;
+  margin: 5% auto;
+  z-index: 900;
+}
+#tk_header {
+  height: 40px;
+}
+#tk_header-right {
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: red;
+  color: #eee;
+  right: 5px;
+  top: 5px;
+  text-align: center;
+}
+
 *::selection {
   background: var(--orange);
   color: #fff;
@@ -189,6 +221,11 @@ header .search-bar-container label:hover {
   text-transform: uppercase;
   text-align: center;
   padding: 1rem 0;
+}
+.works {
+  width: calc(33% - 10px);
+  height: 250px;
+  cursor: pointer;
 }
 
 .login-form-container form .box {
