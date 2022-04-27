@@ -16,3 +16,9 @@ C:\Users\Administrator\Desktop\Hotel-main\Hotel\HotelManage-master\Utils\obj\Deb
 C:\Users\Administrator\Desktop\Hotel-main\Hotel\HotelManage-master\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\Hotel-main\Hotel\HotelManage-master\Utils\obj\Debug\Utils.dll
 C:\Users\Administrator\Desktop\Hotel-main\Hotel\HotelManage-master\Utils\obj\Debug\Utils.pdb
+C:\Users\Administrator\Desktop\Hotel\Hotel\HotelManage-master\Utils\bin\Debug\Utils.dll
+C:\Users\Administrator\Desktop\Hotel\Hotel\HotelManage-master\Utils\bin\Debug\Utils.pdb
+C:\Users\Administrator\Desktop\Hotel\Hotel\HotelManage-master\Utils\obj\Debug\Utils.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Hotel\Hotel\HotelManage-master\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Hotel\Hotel\HotelManage-master\Utils\obj\Debug\Utils.dll
+C:\Users\Administrator\Desktop\Hotel\Hotel\HotelManage-master\Utils\obj\Debug\Utils.pdb

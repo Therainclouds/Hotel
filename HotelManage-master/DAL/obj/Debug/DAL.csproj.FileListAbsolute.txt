@@ -39,3 +39,9 @@ C:\Users\Administrator\Desktop\Hotel-main\Hotel\HotelManage-master\DAL\obj\Debug
 C:\Users\Administrator\Desktop\Hotel-main\Hotel\HotelManage-master\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\Hotel-main\Hotel\HotelManage-master\DAL\obj\Debug\DAL.dll
 C:\Users\Administrator\Desktop\Hotel-main\Hotel\HotelManage-master\DAL\obj\Debug\DAL.pdb
+C:\Users\Administrator\Desktop\Hotel\Hotel\HotelManage-master\DAL\bin\Debug\DAL.dll
+C:\Users\Administrator\Desktop\Hotel\Hotel\HotelManage-master\DAL\bin\Debug\DAL.pdb
+C:\Users\Administrator\Desktop\Hotel\Hotel\HotelManage-master\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Hotel\Hotel\HotelManage-master\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Hotel\Hotel\HotelManage-master\DAL\obj\Debug\DAL.dll
+C:\Users\Administrator\Desktop\Hotel\Hotel\HotelManage-master\DAL\obj\Debug\DAL.pdb
