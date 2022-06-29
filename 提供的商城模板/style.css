@@ -710,6 +710,12 @@ header .search-bar-container label:hover {
   #menu-bar {
     display: initial;
   }
+  .tankuang {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    margin-left: 100px;
+  }
 
   header .navbar {
     position: absolute;
@@ -738,6 +744,12 @@ header .search-bar-container label:hover {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .tankuang {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    margin-left: 50px;
   }
 
   .heading span {

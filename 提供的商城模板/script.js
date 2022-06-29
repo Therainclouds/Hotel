@@ -62,26 +62,7 @@ var swiper = new Swiper(".brand-slider", {
     },
   },
 });
-//数据验证
-// function isEmpty() {
-//   var name = document.forms["inserte_own"]["name"].value;
-//   var call = document.forms["inserte_own"]["call"].value;
-//   var id = document.forms["inserte_own"]["id"].value;
-//   if (name == null || name == "") {
-//     alert("请填写姓名");
-//     return false;
-//   } else if (call == null || call == "") {
-//     alert("请填写联系方式");
-//     return false;
-//   } else if (call.length < 11) {
-//     alert("手机号无效");
-//   } else if (id == null || id == "") {
-//     alert("请填写身份证");
-//     return false;
-//   } else if (id.length < 18) {
-//     alert("身份证号无效");
-//   }
-// }
+
 function btget() {
   $.ajax({
     type: "post",
