@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HotelManage1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ChargeCount">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="Charge" Type="Double" />
+  </EntityType>
+  <EntityType Name="FloorInfo">
+    <Key>
+      <PropertyRef Name="Fid" />
+    </Key>
+    <Property Name="Fid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GuestInfo">
+    <Key>
+      <PropertyRef Name="Gid" />
+    </Key>
+    <Property Name="Gid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Gname" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GTid" Type="Int32" Nullable="false" />
+    <Property Name="Sex" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ChargeSum" Type="Int32" />
+    <Property Name="Pid" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GuestType">
+    <Key>
+      <PropertyRef Name="GTid" />
+    </Key>
+    <Property Name="GTid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tname" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Trate" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPInfo">
+    <Key>
+      <PropertyRef Name="OId" />
+    </Key>
+    <Property Name="OId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Record">
+    <Key>
+      <PropertyRef Name="REid" />
+    </Key>
+    <Property Name="REid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Gid" Type="Int32" Nullable="false" />
+    <Property Name="RoomId" Type="Int32" Nullable="false" />
+    <Property Name="InTime" Type="DateTime" Precision="3" />
+    <Property Name="OutTime" Type="DateTime" Precision="3" />
+    <Property Name="FactTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="daynum" Type="Int32" />
+    <Property Name="Charge" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Reserve">
+    <Key>
+      <PropertyRef Name="Yid" />
+    </Key>
+    <Property Name="Yid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Gid" Type="Int32" Nullable="false" />
+    <Property Name="RoomId" Type="Int32" Nullable="false" />
+    <Property Name="InTime" Type="DateTime" Precision="3" />
+    <Property Name="OutTime" Type="DateTime" Precision="3" />
+    <Property Name="FactTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="daynum" Type="Int32" />
+    <Property Name="Charge" Type="Int32" />
+    <Property Name="actCharge" Type="Int32" />
+  </EntityType>
+  <EntityType Name="RoomInfo">
+    <Key>
+      <PropertyRef Name="RoomId" />
+    </Key>
+    <Property Name="RoomId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RTid" Type="Int32" />
+    <Property Name="RSid" Type="Int32" />
+    <Property Name="Fid" Type="Int32" />
+    <Property Name="Mark" Type="String" MaxLength="225" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="RoomState">
+    <Key>
+      <PropertyRef Name="StateId" />
+    </Key>
+    <Property Name="StateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StateName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RoomType">
+    <Key>
+      <PropertyRef Name="RTid" />
+    </Key>
+    <Property Name="RTid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RTname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RTprice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="AddBedPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="IsAddBed" Type="Boolean" />
+    <Property Name="Remark" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Trans">
+    <Key>
+      <PropertyRef Name="transid" />
+    </Key>
+    <Property Name="transid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="reason" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="addmoney" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="UId" />
+    </Key>
+    <Property Name="UId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Uname" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Upwd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Tid" Type="Int32" />
+    <Property Name="Sex" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Pid" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="HotelManage1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ChargeCount" EntityType="Self.ChargeCount" />
+    <EntitySet Name="FloorInfo" EntityType="Self.FloorInfo" />
+    <EntitySet Name="GuestInfo" EntityType="Self.GuestInfo" />
+    <EntitySet Name="GuestType" EntityType="Self.GuestType" />
+    <EntitySet Name="OPInfo" EntityType="Self.OPInfo" />
+    <EntitySet Name="Record" EntityType="Self.Record" />
+    <EntitySet Name="Reserve" EntityType="Self.Reserve" />
+    <EntitySet Name="RoomInfo" EntityType="Self.RoomInfo" />
+    <EntitySet Name="RoomState" EntityType="Self.RoomState" />
+    <EntitySet Name="RoomType" EntityType="Self.RoomType" />
+    <EntitySet Name="Trans" EntityType="Self.Trans" />
+    <EntitySet Name="UserInfo" EntityType="Self.UserInfo" />
+  </EntityContainer>
+</Schema>
