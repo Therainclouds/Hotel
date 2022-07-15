@@ -4,3 +4,9 @@ E:\Hotel\Hotel\HotelManage-master\DAL\obj\Release\DAL.csproj.AssemblyReference.c
 E:\Hotel\Hotel\HotelManage-master\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
 E:\Hotel\Hotel\HotelManage-master\DAL\obj\Release\DAL.dll
 E:\Hotel\Hotel\HotelManage-master\DAL\obj\Release\DAL.pdb
+E:\Hotel\Hotel-main\HotelManage-master\DAL\bin\Release\DAL.dll
+E:\Hotel\Hotel-main\HotelManage-master\DAL\bin\Release\DAL.pdb
+E:\Hotel\Hotel-main\HotelManage-master\DAL\obj\Release\DAL.csproj.AssemblyReference.cache
+E:\Hotel\Hotel-main\HotelManage-master\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+E:\Hotel\Hotel-main\HotelManage-master\DAL\obj\Release\DAL.dll
+E:\Hotel\Hotel-main\HotelManage-master\DAL\obj\Release\DAL.pdb

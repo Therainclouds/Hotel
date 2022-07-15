@@ -7,3 +7,12 @@ E:\Hotel\Hotel\HotelManage-master\BLL\obj\Release\BLL.csproj.CoreCompileInputs.c
 E:\Hotel\Hotel\HotelManage-master\BLL\obj\Release\BLL.csproj.CopyComplete
 E:\Hotel\Hotel\HotelManage-master\BLL\obj\Release\BLL.dll
 E:\Hotel\Hotel\HotelManage-master\BLL\obj\Release\BLL.pdb
+E:\Hotel\Hotel-main\HotelManage-master\BLL\bin\Release\BLL.dll
+E:\Hotel\Hotel-main\HotelManage-master\BLL\bin\Release\BLL.pdb
+E:\Hotel\Hotel-main\HotelManage-master\BLL\bin\Release\DAL.dll
+E:\Hotel\Hotel-main\HotelManage-master\BLL\bin\Release\DAL.pdb
+E:\Hotel\Hotel-main\HotelManage-master\BLL\obj\Release\BLL.csproj.AssemblyReference.cache
+E:\Hotel\Hotel-main\HotelManage-master\BLL\obj\Release\BLL.csproj.CoreCompileInputs.cache
+E:\Hotel\Hotel-main\HotelManage-master\BLL\obj\Release\BLL.csproj.CopyComplete
+E:\Hotel\Hotel-main\HotelManage-master\BLL\obj\Release\BLL.dll
+E:\Hotel\Hotel-main\HotelManage-master\BLL\obj\Release\BLL.pdb

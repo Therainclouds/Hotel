@@ -4,3 +4,9 @@ E:\Hotel\Hotel\HotelManage-master\Utils\obj\Release\Utils.csproj.AssemblyReferen
 E:\Hotel\Hotel\HotelManage-master\Utils\obj\Release\Utils.csproj.CoreCompileInputs.cache
 E:\Hotel\Hotel\HotelManage-master\Utils\obj\Release\Utils.dll
 E:\Hotel\Hotel\HotelManage-master\Utils\obj\Release\Utils.pdb
+E:\Hotel\Hotel-main\HotelManage-master\Utils\bin\Release\Utils.dll
+E:\Hotel\Hotel-main\HotelManage-master\Utils\bin\Release\Utils.pdb
+E:\Hotel\Hotel-main\HotelManage-master\Utils\obj\Release\Utils.csproj.AssemblyReference.cache
+E:\Hotel\Hotel-main\HotelManage-master\Utils\obj\Release\Utils.csproj.CoreCompileInputs.cache
+E:\Hotel\Hotel-main\HotelManage-master\Utils\obj\Release\Utils.dll
+E:\Hotel\Hotel-main\HotelManage-master\Utils\obj\Release\Utils.pdb

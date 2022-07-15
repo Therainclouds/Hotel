@@ -1,0 +1,6 @@
+E:\Hotel\Hotel-main\HotelManage-master\Models\bin\Release\Models.dll
+E:\Hotel\Hotel-main\HotelManage-master\Models\bin\Release\Models.pdb
+E:\Hotel\Hotel-main\HotelManage-master\Models\obj\Release\Models.csproj.AssemblyReference.cache
+E:\Hotel\Hotel-main\HotelManage-master\Models\obj\Release\Models.csproj.CoreCompileInputs.cache
+E:\Hotel\Hotel-main\HotelManage-master\Models\obj\Release\Models.dll
+E:\Hotel\Hotel-main\HotelManage-master\Models\obj\Release\Models.pdb
