@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>即梦 · 梦境视觉化体验</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero" id="top">
+        <nav class="nav">
+            <div class="brand">即梦 DreamOS</div>
+            <div class="nav-links">
+                <a href="#experience">体验</a>
+                <a href="#journey">旅程</a>
+                <a href="#interpretation">解读</a>
+                <a href="#pricing">会员</a>
+            </div>
+            <button class="nav-cta" id="openLogin">登录 / 注册</button>
+        </nav>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>将梦境具象化，触碰潜意识的温度</h1>
+                <p>即梦 API 驱动的全景体验，输入灵感或轻声述说，即刻生成三种风格的梦境，并将它们转化为沉浸式视频与暖心解析。</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#experience">立即体验</a>
+                    <a class="btn secondary" href="#journey">探索旅程</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <h3>灵感瞬间</h3>
+                    <p>捕捉梦的碎片，跨越现实的界限。</p>
+                </div>
+                <div class="glow"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="experience" id="experience">
+            <div class="section-heading">
+                <span>01</span>
+                <h2>输入关键词 · 即刻生成梦境图像</h2>
+                <p>支持文字或语音输入，智能解析情绪、色彩与象征意象，返回三种独特风格的梦境视觉。</p>
+            </div>
+            <div class="input-panel">
+                <div class="input-group">
+                    <label for="dreamPrompt">梦境关键词 / 描述</label>
+                    <div class="input-row">
+                        <input id="dreamPrompt" type="text" placeholder="例如：星空、海浪、童年" maxlength="200">
+                        <button class="icon-button" id="voiceInput" aria-label="语音输入">
+                            <span class="material-symbols">🎙️</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="panel-actions">
+                    <button class="btn primary" id="generateDreams">生成梦境</button>
+                    <button class="btn tertiary" id="resetDreams">清空</button>
+                </div>
+            </div>
+            <div class="cards-grid" id="dreamGallery" aria-live="polite">
+                <!-- Dream cards injected by script -->
+            </div>
+            <div class="video-section">
+                <h3>梦境视频化</h3>
+                <p>通过即梦视频引擎，将静态意象转换为动态叙事，生成三种镜头语言，感受梦境流动。</p>
+                <button class="btn primary" id="generateVideos">转换为梦境视频</button>
+                <div class="cards-grid" id="videoGallery">
+                    <!-- Video cards injected -->
+                </div>
+            </div>
+        </section>
+
+        <section class="journey" id="journey">
+            <div class="section-heading">
+                <span>02</span>
+                <h2>分层旅程 · 打开梦境的阶梯</h2>
+                <p>参考苹果官网的沉浸式动线，我们为你打造了三级梦境旅程，循序渐进地探索自我。</p>
+            </div>
+            <div class="journey-steps">
+                <article class="step">
+                    <h3>Level 1 · 灵感采集</h3>
+                    <p>快速记录梦境碎片，语音唤醒即时识别，生成初步图像与情绪色谱。</p>
+                    <ul>
+                        <li>实时语音转文字</li>
+                        <li>情绪光谱可视化</li>
+                        <li>梦境档案云端同步</li>
+                    </ul>
+                </article>
+                <article class="step">
+                    <h3>Level 2 · 梦境雕琢</h3>
+                    <p>精选图像、调色、增加叙事元素，为梦境注入独特风格。</p>
+                    <ul>
+                        <li>风格迁移渲染</li>
+                        <li>意象标签编辑</li>
+                        <li>与好友共享梦境</li>
+                    </ul>
+                </article>
+                <article class="step">
+                    <h3>Level 3 · 深层解码</h3>
+                    <p>结合周公解梦框架与心理学反馈，呈现梦境故事与行动建议。</p>
+                    <ul>
+                        <li>象征意义剖析</li>
+                        <li>潜意识情绪报告</li>
+                        <li>专业顾问预约</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="interpretation" id="interpretation">
+            <div class="section-heading">
+                <span>03</span>
+                <h2>梦境解析 · 周公框架结合心理慰藉</h2>
+                <p>融合东方梦境文化与现代心理学，为你提供温暖的解读与贴心的行动建议。</p>
+            </div>
+            <div class="interpretation-content">
+                <article class="analysis-card" id="analysisCard">
+                    <h3>梦境解读</h3>
+                    <p class="analysis-body">输入梦境后，这里将呈现符号意义、情绪暗示与心理按摩建议。</p>
+                    <div class="analysis-actions">
+                        <button class="btn secondary" id="refreshAnalysis">重新生成解析</button>
+                        <button class="btn tertiary" id="saveAnalysis">收藏至梦境日记</button>
+                    </div>
+                </article>
+                <aside class="soothing">
+                    <h4>心理按摩建议</h4>
+                    <ul>
+                        <li>呼吸引导音频，帮助放松</li>
+                        <li>冥想指导：专注当下，接受梦境提示</li>
+                        <li>正念日记模板，记录每日心情</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="extras" id="extras">
+            <div class="extras-grid">
+                <article>
+                    <h3>多设备同步</h3>
+                    <p>iOS、Android 与 Web 三端同步梦境记录，随时访问你的潜意识档案。</p>
+                </article>
+                <article>
+                    <h3>梦境社群</h3>
+                    <p>加入即梦社区，分享梦境灵感，参与线下圆梦工作坊。</p>
+                </article>
+                <article>
+                    <h3>安全守护</h3>
+                    <p>端到端加密与匿名分享，守护你的隐私与情感空间。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <div class="section-heading">
+                <span>04</span>
+                <h2>会员方案 · 持续探索潜意识的旅程</h2>
+                <p>试用三次后可通过微信、Google 或手机号登录。体验超过十次，将自动唤起订阅页面。</p>
+            </div>
+            <div class="pricing-grid">
+                <article class="plan">
+                    <h3>月度会员</h3>
+                    <p class="price">¥29.9 / 月</p>
+                    <ul>
+                        <li>无限次梦境生成</li>
+                        <li>高清梦境视频导出</li>
+                        <li>专属心理顾问答疑</li>
+                    </ul>
+                    <button class="btn primary">立即订阅</button>
+                </article>
+                <article class="plan highlight">
+                    <h3>年度会员</h3>
+                    <p class="price">¥99.9 / 年</p>
+                    <ul>
+                        <li>尊享月度全部权益</li>
+                        <li>专属梦境档案馆</li>
+                        <li>线下梦境沙龙门票</li>
+                    </ul>
+                    <button class="btn secondary">限时加入</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h4>即梦 DreamOS</h4>
+                <p>让每一个梦境都有回应。© 2024 DreamOS Lab.</p>
+            </div>
+            <div>
+                <h4>产品</h4>
+                <ul>
+                    <li><a href="#experience">梦境视觉化</a></li>
+                    <li><a href="#journey">分层旅程</a></li>
+                    <li><a href="#interpretation">梦境解析</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>支持</h4>
+                <ul>
+                    <li><a href="#pricing">会员方案</a></li>
+                    <li><a href="#">隐私策略</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>关注我们</h4>
+                <div class="socials">
+                    <a href="#" aria-label="WeChat">WeChat</a>
+                    <a href="#" aria-label="Weibo">Weibo</a>
+                    <a href="#" aria-label="Bilibili">Bilibili</a>
+                </div>
+            </div>
+        </div>
+        <a href="#top" class="back-to-top">返回顶部</a>
+    </footer>
+
+    <div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+        <div class="modal-content">
+            <button class="close" data-close>&times;</button>
+            <h3 id="loginTitle">登录即梦</h3>
+            <p>试用已达三次，请选择登录方式继续探索你的梦境世界。</p>
+            <div class="login-options">
+                <button class="btn wechat">微信登录</button>
+                <button class="btn google">Google 登录</button>
+                <button class="btn tertiary">手机号登录</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="paymentModal" role="dialog" aria-modal="true" aria-labelledby="paymentTitle">
+        <div class="modal-content">
+            <button class="close" data-close>&times;</button>
+            <h3 id="paymentTitle">解锁完整梦境体验</h3>
+            <p>你已进行 10 次梦境生成，订阅会员享受无限次创作与深度解析。</p>
+            <div class="payment-options">
+                <div>
+                    <h4>月度会员</h4>
+                    <p class="price">¥29.9</p>
+                    <button class="btn primary">订阅月度</button>
+                </div>
+                <div>
+                    <h4>年度会员</h4>
+                    <p class="price">¥99.9</p>
+                    <button class="btn secondary">订阅年度</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <template id="dreamCardTemplate">
+        <article class="card dream-card">
+            <div class="card-media"></div>
+            <div class="card-body">
+                <h3></h3>
+                <p class="style"></p>
+            </div>
+        </article>
+    </template>
+
+    <template id="videoCardTemplate">
+        <article class="card video-card">
+            <div class="card-media video"></div>
+            <div class="card-body">
+                <h3></h3>
+                <p class="style"></p>
+            </div>
+        </article>
+    </template>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
